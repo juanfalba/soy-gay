@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Contacto.css">
+    <title>Educacion Fisica</title> 
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <ul id="lista-menu">
+                <a href="index.html" class="enlace-menu"><li class="menu-item">Inicio</li></a>
+                <a href="Campamento.html" class="enlace-menu"><li class="menu-item">Campamento</li></a>
+                <a href="Recreacion.html" class="enlace-menu"><li class="menu-item">Recreacion</li></a>
+                <a href="Atletismo.html" class="enlace-menu"><li class="menu-item">Atletismo</li></a>
+                <a href="Contacto.html" class="enlace-menu"><li class="menu-item">Contacto</li></a>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="titulo">Contacto</h1>
+    <p id="descripcion">Si deseas ponerte en contacto con nosotros, puedes hacerlo a través de nuestras redes sociales que encuentras aquí abajo. Estaremos encantados de atender todas tus necesidades y responder a tus preguntas. ¡No dudes en escribirnos!</p>
+    <div id="contenedor-2">
+        <div id="contenedor-facebook">
+            <a href="https://www.facebook.com/profile.php?id=100092690191195" target="_blank">
+                <img src="./img/facebook.jpg" alt="Facebook" />
+            </a>
+        </div>
+        <div id="contenedor-instagram">
+            <a href="https://www.instagram.com/juan_albarracinn/" target="_blank">
+                <img src="./img/instagram.jpg" alt="Instagram" />
+            </a>
+        </div>
+    </div>
+    <div id="sugerencias">
+        <img src="./img/Buzon.png" alt="Sugerencias" />
+    </div>
+    <div id="recuadro">
+        <h3>Sugerencias</h3>
+        <input type="text" placeholder="Tu nombre" />
+        <textarea rows="4" placeholder="Escribe tu sugerencia..."></textarea>
+        <button>Enviar</button>
+    </div>
+
+    <script>
+        const sugerenciasIcono = document.getElementById('sugerencias');
+        const recuadro = document.getElementById('recuadro');
+
+        sugerenciasIcono.addEventListener('click', () => {
+            recuadro.style.display = recuadro.style.display === 'none' || recuadro.style.display === '' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
+
+

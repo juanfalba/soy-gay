@@ -1,0 +1,125 @@
+:root {
+    --color-fondo: linear-gradient(to right, #a8e0f7, #ff7e5f);
+    --color-header: #007BFF;
+    --color-text: #333;
+    --color-secundario: #ffffff;
+    --color-titulo: #007BFF;
+    --color-subtitulo: #ff6b6b;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-text);
+    background: var(--color-fondo);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--color-header);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative; /* Para permitir la posición absoluta del logo */
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+}
+
+#lista-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: 80px; /* Espacio para el logo */
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 15px 40px;
+    margin: 0 10px;
+    background: linear-gradient(45deg, #007BFF, #00C6FF);
+    color: var(--color-secundario);
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    border: none;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.enlace-menu {
+    text-decoration: none;
+    color: inherit;
+}
+
+#logo-link {
+    position: absolute;
+    top: 10px; /* Mantener la distancia desde la parte superior */
+    left: 10px; /* Mantener en la esquina izquierda */
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: var(--color-text);
+    text-align: center;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.sitios-turisticos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.sitio {
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sitio:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.sitio img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info {
+    padding: 15px;
+    text-align: center;
+}
+
+.info h3 {
+    color: var(--color-titulo);
+    margin-bottom: 10px;
+}
+
+.info p {
+    color: var(--color-text);
+    font-size: 1em;
+    line-height: 1.5;
+}

@@ -1,0 +1,139 @@
+:root {
+    --color-fondo: linear-gradient(to right, #a8e0f7, #ff7e5f);
+    --color-header: #007BFF;
+    --color-text: #333;
+    --color-secundario: #ffffff;
+    --color-titulo: #007BFF;
+    --color-subtitulo: #ff6b6b;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-text);
+    background: var(--color-fondo);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--color-header);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+}
+
+#lista-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 15px 40px;
+    margin: 0 10px;
+    background: linear-gradient(45deg, #007BFF, #00C6FF);
+    color: var(--color-secundario);
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    border: none; 
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.enlace-menu {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4 {
+    color: var(--color-text);
+    text-align: center;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+#titulo {
+    margin-top: 20px;
+}
+
+#descripcion {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 20px;
+}
+
+#contenedor-1 {
+    width: 100vw;
+    height: 400px;
+    background-image: url("./img/portada.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+#contenedor-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    padding: 20px 0; 
+}
+
+#contenedor-3, #contenedor-4, #contenedor-5 {
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#contenedor-3 {
+    background-image: url("./img/agt millos.JPG");
+}
+
+#contenedor-4 {
+    background-image: url("./img/Minuto 85 millos.jpeg");
+}
+
+#contenedor-5 {
+    background-image: url("./img/Messi millos.jfif");
+}
+
+#contenedor-3:hover, #contenedor-4:hover, #contenedor-5:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: var(--color-header);
+    color: var(--color-secundario);
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+

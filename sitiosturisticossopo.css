@@ -1,0 +1,114 @@
+:root {
+    --color-fondo: linear-gradient(to right, #a8e0f7, #ff7e5f);
+    --color-header: #007BFF;
+    --color-text: #333;
+    --color-secundario: #ffffff;
+    --color-titulo: #007BFF;
+    --color-subtitulo: #ff6b6b;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-text);
+    background: var(--color-fondo);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--color-header);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative; /* Para posicionar el logo */
+}
+
+.logo-img {
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical */
+    left: 10px; /* Ajusta la posición horizontal */
+    border-radius: 50%; /* Hace la imagen circular */
+    width: 50px; /* Ajusta el tamaño de la imagen */
+    height: 50px; /* Mantiene la proporción */
+    overflow: hidden; /* Asegura que la imagen se recorte si es necesario */
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+}
+
+#lista-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 15px 40px;
+    margin: 0 10px;
+    background: linear-gradient(45deg, #007BFF, #00C6FF);
+    color: var(--color-secundario);
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.enlace-menu {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    color: var(--color-text);
+    text-align: center;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.sitios-turisticos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.sitio-turistico {
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.sitio-turistico:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.sitio-turistico img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sitio-turistico h3 {
+    color: var(--color-titulo);
+    margin: 10px 0;
+}
+
+.sitio-turistico p {
+    color: var(--color-text);
+    padding: 0 15px 15px;
+}
